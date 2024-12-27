@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year, Leeny!</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: url('https://images.unsplash.com/photo-1552202442-5f44c9f1574b') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        .heart {
+            font-size: 2rem;
+            color: #ff69b4;
+        }
+        button {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: white;
+            background-color: #d63384;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background-color: #b21f5e;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy New Year, Habibi!</h1>
+        <p>Love you soo much, I wish you have a beautiful year like your eyes 👀</p>
+        <p>Bhbk Khawa ya 7elweh enty 💙</p>
+        <button onclick="openSurprisePage()">Click for a Surprise!</button>
+    </div>
+
+    <script>
+        function openSurprisePage() {
+            const newWindow = window.open('', '_blank');
+            newWindow.document.write(`
+                <html>
+                    <head>
+                        <title>Surprise!</title>
+                        <style>
+                            body {
+                                text-align: center;
+                                font-family: 'Comic Sans MS', cursive, sans-serif;
+                                background: url('https://images.unsplash.com/photo-1552202442-5f44c9f1574b') no-repeat center center fixed;
+                                background-size: cover;
+                                color: #fff;
+                            }
+                            h1 {
+                                font-size: 3rem;
+                                color: #ff69b4;
+                                margin-top: 50px;
+                            }
+                        </style>
+                    </head>
+                    <body>
+                        <h1>You are the tulip of my heart 🌷</h1>
+                    </body>
+                </html>
+            `);
+        }
+    </script>
+</body>
+</html>
